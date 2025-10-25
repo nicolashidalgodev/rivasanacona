@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row justify-content-around accordion" id="accordionExample">
+                <div class="row justify-content-around accordion" id="accordionEquipo">
                     <article class="col-lg-5 d-flex align-items-center flex-column px-lg-0 mb-5">
                         <figure class="w-75 figure-bg figure-bg-green mb-5">
                             <img src="assets/carolina-rivas.png" alt="Carolina Rivas" width="250" class="me-n-5">
@@ -131,7 +131,7 @@
                                     <span class="line"></span>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionEquipo">
                                     <div class="accordion-body">
                                     <p class="mb-lg-5 text-justify lh-sm">Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
                                     <a href="https://cl.linkedin.com/" target="_blank" class="text-uppercase text-dark link w-100">
@@ -153,7 +153,7 @@
                                     <span class="line"></span>
                                   </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionEquipo">
                                   <div class="accordion-body">
                                     <p class="mb-lg-5 text-justify lh-sm">Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
                                     <a href="https://cl.linkedin.com/" target="_blank" class="text-uppercase text-dark link w-100">
@@ -189,41 +189,65 @@
                 </div>
             </header>
             <div class="container mb-5">
-                <div class="row">
+                <div class="row accordion" id="accordionServicios">
                     <article class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card p-4 text-light bg-red">
-                            <header class="title-service mb-5">
-                                <img src="assets/icon-1.svg" alt="">
-                                <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
-                                    Derecho Inmobiliario y de Construcción
-                                </h3>
-                            </header>
-                            <p class="fs-6 lh-sm text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                            <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                            <div class="accordion-item border-1 border-light border-bottom rounded-0">
+                                <header class="accordion-header" id="headingServicioOne">
+                                    <button class="title-service w-100 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServicioOne" aria-expanded="true" aria-controls="collapseServicioOne">
+                                        <img src="assets/icon-1.svg" alt="">
+                                        <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
+                                            Derecho Inmobiliario y de Construcción
+                                        </h3>
+                                    </button>
+                                </header>
+                                <div id="collapseServicioOne" class="accordion-collapse collapse show" aria-labelledby="headingServicioOne" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="fs-6 lh-sm text-justify text-start mb-5 text-light">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                                        <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
                     <article class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card p-4 text-light bg-purple">
-                            <header class="title-service mb-5">
-                                <img src="assets/icon-2.svg" alt="">
-                                <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
-                                    Derecho Tributario y Corporativo
-                                </h3>
-                            </header>
-                            <p class="fs-6 lh-sm text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                            <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                            <div class="accordion-item border-1 border-light border-bottom rounded-0">
+                                <header class="accordion-header" id="headingServicioTwo">
+                                    <button class="title-service w-100 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServicioTwo" aria-expanded="true" aria-controls="collapseServicioTwo">
+                                        <img src="assets/icon-2.svg" alt="">
+                                        <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
+                                            Derecho Tributario y Corporativo
+                                        </h3>
+                                    </button>
+                                </header>
+                                <div id="collapseServicioTwo" class="accordion-collapse collapse show" aria-labelledby="headingServicioTwo" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="fs-6 lh-sm text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el coTwonte indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                                        <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
                     <article class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card p-4 text-light bg-yellow">
-                            <header class="title-service mb-5">
-                                <img src="assets/icon-3.svg" alt="">
-                                <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
-                                    Derecho Administrativo
-                                </h3>
-                            </header>
-                            <p class="fs-6 lh-sm text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                            <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                            <div class="accordion-item border-1 border-light border-bottom rounded-0">
+                                <header class="accordion-header" id="headingServicioThree">
+                                    <button class="title-service w-100 accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServicioThree" aria-expanded="true" aria-controls="collapseServicioThree">
+                                        <img src="assets/icon-3.svg" alt="">
+                                        <h3 class="text-light m-0 lh-1 ms-3 fw-semibold">
+                                            Derecho Administrativo
+                                        </h3>
+                                    </button>
+                                </header>
+                                <div id="collapseServicioThree" class="accordion-collapse collapse show" aria-labelledby="headingServicioThree" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="fs-6 lh-sm text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                                        <a href="#contacto" class="boton boton-white mb-3">contacto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
                 </div>
