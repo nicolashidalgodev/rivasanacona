@@ -19,4 +19,4 @@ for (const item of items) {
 
 const nav = document.getElementById("navbar");
 
-window.addEventListener( "scroll", () => (window.scrollY >= 250) ? nav.classList.remove('py-4') : nav.classList.add('py-4'))
+window.addEventListener( "scroll", () => (window.scrollY >= 150) ? nav.classList.remove('py-3') : nav.classList.add('py-3'))

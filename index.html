@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="navbar">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#inicio">
                     <img src="assets/logo.svg" alt="RIVASANACONA Logo" class="d-inline-block align-text-top">
@@ -32,7 +32,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item" data-bs-dismiss="offcanvas">
-                                <a class="nav-link" href="#eEstudio">Estudio</a>
+                                <a class="nav-link" href="#estudio">Estudio</a>
                             </li>
                             <li class="nav-item" data-bs-dismiss="offcanvas">
                                 <a class="nav-link" href="#equipo">Equipo</a>
@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="#servicios">Servicios</a>
                             </li>
                             <li class="nav-item" data-bs-dismiss="offcanvas">
-                                <a class="nav-link" href="#galeria">Contacto</a>
+                                <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -52,29 +52,29 @@
 
     <main>
 
-        <section class="hero" id="inicio">
+        <section class="hero animate__animated" data-animation="animate__fadeIn" id="inicio">
             <div class="container">
-                <div class="col-lg-6">
-                    <header class="header">
-                        <h1 class="h1">RIVASANACONA</h1>
-                        <p class="lead">Soluciones Integrales para un Mundo Dinámico</p>
-                        <a href="#" class="boton boton-red">Contacto</a>
+                <div class="col-lg-9">
+                    <header class="header mb-5 letter-spacing">
+                        <h1 class="fs-1 fw-semibold text-light">RIVASANACONA</h1>
+                        <p class="display-4 fw-bold text-light pe-lg-5">Soluciones Integrales para un Mundo Dinámico</p>
                     </header>
+                    <a href="#" class="boton boton-red">Contacto</a>
                 </div>
             </div>
         </section>
 
-        <section class="section animate__animated" data-animation="animate__fadeIn">
+        <section class="animate__animated" data-animation="animate__fadeIn" id="estudio">
             <div class="container py-5">
                 <div class="row justify-content-end align-items-center">
-                    <div class="col-lg-7 pe-5">
+                    <div class="col-lg-8">
                         <header>
-                            <h2 class="display-6 py-5 text-end">
+                            <h2 class="fs-2 py-5 text-end letter-spacing line-height px-4 fw-normal">
                                 Hemos diseñado una oferta de servicios personalizada que responde a sus necesidades, asegurando <strong class="text-red fw-bold">una cobertura legal completa y especializada.</strong>
                             </h2>
                         </header>
                     </div>
-                    <div class="col-lg-3 ps-5 border-start border-2 border-dark">
+                    <div class="col-lg-4 border-start border-2 border-dark ps-4 letter-spacing">
                         <ul class="list-unstyled py-5">
                             <li class="text-red display-5 fw-bold">Excelencia</li>
                             <li class="text-green display-5 my-4 fw-bold">Dedicación</li>
@@ -87,19 +87,19 @@
                 <div class="row">
                     <div class="col-4 bg-red d-flex align-items-center justify-content-end p-4">
                         <img src="assets/icon-1.svg" alt="">
-                        <p class="text-light m-0 fs-4 ms-3">
+                        <p class="text-light m-0 fs-5 ms-3 line-height-1 fw-semibold">
                             Derecho Inmobiliario y de Construcción
                         </p>
                     </div>
                     <div class="col-4 bg-purple d-flex align-items-center justify-content-center p-4">
                         <img src="assets/icon-2.svg" alt="">
-                        <p class="text-light m-0 fs-4 ms-3">
+                        <p class="text-light m-0 fs-5 ms-3 line-height-1 fw-semibold">
                             Derecho Tributario y Corporativo
                         </p>
                     </div>
                     <div class="col-4 bg-yellow d-flex align-items-center justify-content-start p-4">
                         <img src="assets/icon-3.svg" alt="">
-                        <p class="text-light m-0 fs-4 ms-3">
+                        <p class="text-light m-0 fs-5 ms-3 line-height-1 fw-semibold">
                             Derecho Administrativo
                         </p>
                     </div>
@@ -107,144 +107,180 @@
             </footer>
         </section>
 
-        <section class="section bg-amarillo animate__animated" data-animation="animate__fadeIn" id="hacemos">
-            <div class="container-fluid container-md">
+        <section class="animate__animated" data-animation="animate__fadeIn" id="equipo">
+            <div class="container py-5 mb-5">
                 <div class="row">
                     <header class="col-12 mt-4 mb-5">
-                        <h2 class="text-center fw-bold fs-1 py-5">Sobre nosotras</h2>
+                        <h2 class="text-center fw-semibold display-4 mb-4 letters-spacing">Sobre nosotras</h2>
                     </header>
-                    <div class="col-10 mx-auto mb-5">
-                        <p class="text-center fs-5">Entregamos soluciones legales de excelencia, protegiendo los intereses de nuestros clientes y orientando sus decisiones e inversiones. Conscientes que cada situación es única, nos enfocamos en una adecuada estrategia jurídica especializada, con enfoque de resolución de casos altamente complejos.</p>
+                    <div class="col-11 mx-auto">
+                        <p class="text-center fs-5 line-height-1">Entregamos soluciones legales de excelencia, protegiendo los intereses de nuestros clientes y orientando sus decisiones e inversiones. Conscientes que cada situación es única, nos enfocamos en una adecuada estrategia jurídica especializada, con enfoque de resolución de casos altamente complejos.</p>
                     </div>
-                    <article class="col-6">
-                        <figure>
-                            <img src="assets/ab1.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around">
+                    <article class="col-5 d-flex align-items-center flex-column px-0">
+                        <figure class="w-75 figure-bg figure-bg-green mb-5">
+                            <img src="assets/carolina-rivas.png" alt="Carolina Rivas" width="250" class="me-n-5">
                         </figure>
-                        <header>
-                            <h3>Carolina Rivas</h3>
+                        <header class="text-start w-100 mb-4 title-dropdown">
+                            <h3 class="letter-spacing-1">Carolina Rivas</h3>
                         </header>
-                        <p>Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
-                        <a href="">
-                            ver perfil en linkedin
+                        <p class="fs-6 mb-5 text-justify line-height-1">Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
+                        <a href="" class="text-uppercase text-dark link w-100">
+                            <img src="assets/linkedin-icon.svg" alt="Linkedin" class="me-2"> ver perfil en linkedin
                         </a>
                     </article>
-                    <article class="col-6">
-                        <figure>
-                            <img src="assets/ab2.png" alt="">
+                    <article class="col-5 d-flex align-items-center flex-column px-0">
+                        <figure class="w-75 figure-bg figure-bg-red mb-5">
+                            <img src="assets/victoria-anacona.png" alt="Victoria Anacona" width="250" >
                         </figure>
-                        <header>
-                            <h3>Victoria Anacona</h3>
+                        <header class="text-start w-100 mb-4 title-dropdown">
+                            <h3 class="letter-spacing-1">Victoria Anacona</h3>
                         </header>
-                        <p>Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
-                        <a href="">
-                            ver perfil en linkedin
+                        <p class="fs-6 mb-5 text-justify line-height-1">Abogada titulada de la Universidad Diego Portales, con más de 10 años de experiencia en Derecho Administrativo, Inmobiliario, Indígena, Energía y Regularización de terrenos. Diplomada en Derecho y Negocio Inmobiliario y Derecho de Recursos Naturales con mención en Energía de la Pontificia Universidad Católica de Chile. Especializada en el estudio de casos altamente complejos, rigor técnico y alta adaptabilidad a cambios normativos, asegurando una interpretación del sistema jurídico de forma integral y con visión, para entregar soluciones legales concretas, oportunas y confiables para la toma de decisiones.</p>
+                        <a href="" class="text-uppercase text-dark link w-100">
+                            <img src="assets/linkedin-icon.svg" alt="Linkedin" class="me-2"> ver perfil en linkedin
                         </a>
                     </article>
                 </div>
             </div>
-        </section>
-
-        <section class="section animate__animated" data-animation="animate__fadeIn" id="nosotros">
-            <div class="container">
-                <div class="row">
-                    <header class="col-12 col-md-6 mt-4 mb-5 pb-4">
-                        <h2 class="h2 text-center fw-bold fs-1">¿Tienes interés o preguntas sobre algún tema?</h2>
-                        <a href="" class="boton boton-purple">Contacto</a>
-                    </header>
+            <footer class="container-fluid footer-equipo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 mt-4 mb-5 pb-4">
+                            <h2 class="h2 text-light text-start fw-bold fs-2 letter-spacing mb-5">¿Tienes interés o preguntas sobre algún tema?</h2>
+                            <a href="" class="boton boton-purple">Contacto</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </footer>
         </section>
 
-        <section class="section bg-black gallery animate__animated" data-animation="animate__fadeIn" id="galeria">
-            <div class="container">
+        <section class="animate__animated" data-animation="animate__fadeIn" id="servicios">
+            <header class="container py-5">
                 <div class="row">
-                    <header class="col-12 mt-4">
-                        <h2 class="h2 pb-4 text-center fw-bold fs-1">Servicios</h2>
-                        <p>Ofrecemos asesoría especializada en la regularización y adquisición de terrenos, con análisis y gestión de títulos de dominio conforme a la normativa vigente e integración del componente indígena. Realizamos estudios de títulos, análisis de factibilidad legal e informes técnicos que garantizan cumplimiento normativo, seguridad jurídica y reducción de riesgos en proyectos inmobiliarios.</p>
-                    </header>
+                    <header class="col-12 mt-4 mb-3">
+                        <h2 class="text-center fw-semibold display-4 mb-3 letters-spacing text-light">Servicios</h2>
+                    </div>
+                    <div class="col-11 mx-auto">
+                        <p class="text-center fs-5 line-height-1 text-light">Ofrecemos asesoría especializada en la regularización y adquisición de terrenos, con análisis y gestión de títulos de dominio conforme a la normativa vigente e integración del componente indígena. Realizamos estudios de títulos, análisis de factibilidad legal e informes técnicos que garantizan cumplimiento normativo, seguridad jurídica y reducción de riesgos en proyectos inmobiliarios.</p>
+                    </div>
+                </div>
+            </header>
+            <div class="container mb-5">
+                <div class="row">
                     <article class="col-4">
-                        <header>
-                            <h3>Derecho Inmobiliario y de Construcción</h3>
-                        </header>
-                        <p>Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                        <a href="">contacto</a>
+                        <div class="card p-4 text-light bg-red">
+                            <header class="d-flex align-items-center justify-content-end mb-5">
+                                <img src="assets/icon-1.svg" alt="" height="50">
+                                <p class="text-light m-0 line-height-1 ms-3 fw-semibold">
+                                    Derecho Inmobiliario y de Construcción
+                                </p>
+                            </header>
+                            <p class="fs-6 line-height-1 text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                            <a href="" class="boton boton-white mb-3">contacto</a>
+                        </div>
                     </article>
                     <article class="col-4">
-                        <header>
-                            <h3>Derecho Tributario y Corporativo</h3>
-                        </header>
-                        <p>Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                        <a href="">contacto</a>
+                        <div class="card p-4 text-light bg-purple">
+                            <header class="d-flex align-items-center justify-content-end mb-5">
+                                <img src="assets/icon-2.svg" alt="" height="50">
+                                <p class="text-light m-0 line-height-1 ms-3 fw-semibold">
+                                    Derecho Tributario y Corporativo
+                                </p>
+                            </header>
+                            <p class="fs-6 line-height-1 text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                            <a href="" class="boton boton-white mb-3">contacto</a>
+                        </div>
                     </article>
                     <article class="col-4">
-                        <header>
-                            <h3>Derecho Administrativo</h3>
-                        </header>
-                        <p>Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
-                        <a href="">contacto</a>
+                        <div class="card p-4 text-light bg-yellow">
+                            <header class="d-flex align-items-center justify-content-end mb-5">
+                                <img src="assets/icon-3.svg" alt="" height="50">
+                                <p class="text-light m-0 line-height-1 ms-3 fw-semibold">
+                                    Derecho Administrativo
+                                </p>
+                            </header>
+                            <p class="fs-6 line-height-1 text-justify text-start mb-5">Prestamos asesoría especializada en la regularización y adquisición terrenos, incluyendo el análisis y gestión de títulos de dominio conforme a la normativa vigente y con el enfoque que integra el componente indígena, permitiendo una evaluación exhaustiva y estratégica para la adquisición y desarrollo de proyectos inmobiliarios en diversos territorios. Realizamos estudios detallados de títulos a escala, análisis de factibilidad legal y elaboración de informes técnicos para apoyar la toma de decisiones en proyectos de construcción, garantizando cumplimiento normativo, seguridad jurídica y mitigación de riesgos legales.</p>
+                            <a href="" class="boton boton-white mb-3">contacto</a>
+                        </div>
                     </article>
                 </div>
             </div>
+            <footer class="footer-servicios py-5" class="animate__animated" data-animation="animate__fadeIn">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-3">
+                            <header>
+                                <h2 class="text-uppercase">Membresías</h2>
+                            </header>
+                        </div>
+                        <div class="col-5 text-center">
+                            <img src="assets/colegio.png" class="w-100" alt="Logo colegio de abogados de chile">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="assets/women.png" class="w-100" alt="Logo women in taxes chile">
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <header>
-                            <h2 class="text-uppercase">Membresías</h2>
-                        </header>
-                    </div>
-                    <div class="col-4">
-                        <img src="" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="" alt="">
+        <section class="animate__animated" data-animation="animate__fadeIn" id="contacto">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="card bg-grey px-5 mb-5">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-6 d-flex justify-content-center flex-column">
+                                        <header class="mb-3">
+                                            <h2 class="text-red display-3 fw-semibold letter-spacing-1">Contacto</h2>
+                                        </header>
+                                        <p class="fs-2 fw-semibold letter-spacing">¿Cómo podemos ayudarte?</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <form action="" class="card p-4 border-0 bg-light">
+                                            <label class="form-label text-uppercase fs-6 fw-semibold" for="" class="text-uppercase fw-semibold fs-6 mb-2">nombre completo</label>
+                                            <input class="form-control mb-3" type="text" value="" />
+                                            <label class="form-label text-uppercase fs-6 fw-semibold" for="" class="text-uppercase fw-semibold fs-6 mb-2">mail</label>
+                                            <input class="form-control mb-3" type="text" value="" />
+                                            <label class="form-label text-uppercase fs-6 fw-semibold" for="" class="text-uppercase fw-semibold fs-6 mb-2">área de servicio</label>
+                                            <select class="form-select mb-3">
+                                                <option selected>Selecciona</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                            <label class="form-label text-uppercase fs-6 fw-semibold" for="" class="text-uppercase fw-semibold fs-6 mb-2">área de servicio</label>
+                                            <textarea class="form-control mb-5" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <input type="submit" class="boton boton-green" value="Enviar" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <header>Contacto</header>
-                        <p>¿Cómo podemos ayudarte?</p>
-                    </div>
-                    <div class="col-6">
-                        <form action="">
-                            <label for="">nombre completo</label>
-                            <input type="text"> /
-                            <label for="">mail</label>
-                            <input type="text" />
-                            <label for="">área de servicio</label>
-                            <select>
-                                <option value="">Selecciona</option>
-                            </select>
-                            <label for="">área de servicio</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <input type="submit" class="boton boton-green" value="Enviar" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer bg-black">
-            <div class="container">
+        <footer class="footer py-5">
+            <div class="container py-5">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-6 py-4 text-start">
                         <img src="assets/logo-white.svg" alt="">
                     </div>
                     <div class="col-3 text-light">
-                        Contacto <br>
-                        ¿Cómo podemos ayudarte? <br>
+                        <header>Contacto</header>
+                        <p>¿Cómo podemos ayudarte?</p>
                         <a href="" class="link-yellow">contacto@dominio.cl</a>
                     </div>
                     <div class="col-3 text-light">
                         <address>
-                            Dirección <br>
+                            <header>Dirección</header>
                             Sin dirección aún**
                         </address>
                     </div>
