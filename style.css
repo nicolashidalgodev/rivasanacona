@@ -11,7 +11,8 @@
 }
 
 html {
-    scroll-padding-top: 4rem;
+    scroll-margin-top: 3em;
+    /* scroll-padding-top: 4rem; */
 }
 
 body{
@@ -307,9 +308,21 @@ section{
     font-size: 1.2rem;
 }
 
+#servicios .accordion-button:before{
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: white;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
 #servicios .accordion-button:after{
     filter: invert(1);
-    display: none;
+    bottom: -8px;
+    position: absolute;
+    right: 0;
 }
 
 .footer-servicios{
@@ -364,6 +377,53 @@ section{
         /* ancho maximo de acuerdo a diseño inicial */
         max-width: 1024px;
     }
+
+    .hero{
+        /* height: 90vh; */
+        max-height: 700px;
+        background-size: contain;
+        background-position-y: 0;
+        background-position-x: 20vw;
+    }
+
+    .hero:after{
+        background-image: linear-gradient(90deg, rgba(79,84,47,1) 20vw, rgba(79,84,47,0) 50%);
+    }
+
+    .footer-equipo{
+        background-image: url('assets/abogadas-desktop.jpg');
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: center;
+        height: 55vh;
+    }
+
+    .footer-equipo:after{
+        background-image: linear-gradient(90deg, rgba(79,84,47,1) 25vw, rgba(79,84,47,0.2) 70%);
+    }
+
+}
+
+@media (min-width: 1112px) and (max-width: 1399px){
+
+    .hero{
+        height: 80vh;
+        max-height: 600px;
+        background-size: contain;
+        background-position-y: center;
+        background-position-x: 25vw;
+    }
+
+    .hero:after{
+        background-image: linear-gradient(90deg, rgba(79,84,47,1) 30vw, rgba(79,84,47,0) 50%);
+    }
+
+    .footer-equipo{
+        background-image: url('assets/abogadas-desktop.jpg');
+        background-size: cover;
+        height: 70vh;
+    }
+
 }
 
 /* mobile */
@@ -376,6 +436,7 @@ section{
     .hero{
         background-size: cover;
         background-position-x: 40%;
+        background-position-y: center;
     }
 
     .footer-equipo{
